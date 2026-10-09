@@ -1,0 +1,95 @@
+-------------------------------------------------------------------------------
+Test set: EventBookingSystemTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 0, Errors: 13, Skipped: 0, Time elapsed: 0.042 s <<< FAILURE! -- in EventBookingSystemTest
+EventBookingSystemTest.preventsDuplicateAttendeeRegistration -- Time elapsed: 0.013 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "EventBookingSystem.createEvent(String, int)" because "this.system" is null
+	at EventBookingSystemTest.preventsDuplicateAttendeeRegistration(EventBookingSystemTest.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+EventBookingSystemTest.returnsNullWhenEventDoesNotExist -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "EventBookingSystem.findEvent(String)" because "this.system" is null
+	at EventBookingSystemTest.returnsNullWhenEventDoesNotExist(EventBookingSystemTest.java:44)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+EventBookingSystemTest.preventsRegistrationForUnknownEvent -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "EventBookingSystem.registerAttendee(String, String)" because "this.system" is null
+	at EventBookingSystemTest.preventsRegistrationForUnknownEvent(EventBookingSystemTest.java:69)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+EventBookingSystemTest.doesNotCreateEventWithZeroCapacity -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "EventBookingSystem.createEvent(String, int)" because "this.system" is null
+	at EventBookingSystemTest.doesNotCreateEventWithZeroCapacity(EventBookingSystemTest.java:27)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+EventBookingSystemTest.createsEventWithValidDetails -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "EventBookingSystem.createEvent(String, int)" because "this.system" is null
+	at EventBookingSystemTest.createsEventWithValidDetails(EventBookingSystemTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+EventBookingSystemTest.cannotCancelRegistrationThatDoesNotExist -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "EventBookingSystem.createEvent(String, int)" because "this.system" is null
+	at EventBookingSystemTest.cannotCancelRegistrationThatDoesNotExist(EventBookingSystemTest.java:81)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+EventBookingSystemTest.cancelledSeatCanBeBookedAgain -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "EventBookingSystem.createEvent(String, int)" because "this.system" is null
+	at EventBookingSystemTest.cancelledSeatCanBeBookedAgain(EventBookingSystemTest.java:87)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+EventBookingSystemTest.doesNotCreateDuplicateEventName -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "EventBookingSystem.createEvent(String, int)" because "this.system" is null
+	at EventBookingSystemTest.doesNotCreateDuplicateEventName(EventBookingSystemTest.java:32)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+EventBookingSystemTest.registersAttendeeForExistingEvent -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "EventBookingSystem.createEvent(String, int)" because "this.system" is null
+	at EventBookingSystemTest.registersAttendeeForExistingEvent(EventBookingSystemTest.java:49)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+EventBookingSystemTest.doesNotCreateEventWithBlankName -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "EventBookingSystem.createEvent(String, int)" because "this.system" is null
+	at EventBookingSystemTest.doesNotCreateEventWithBlankName(EventBookingSystemTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+EventBookingSystemTest.preventsRegistrationWhenEventIsFull -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "EventBookingSystem.createEvent(String, int)" because "this.system" is null
+	at EventBookingSystemTest.preventsRegistrationWhenEventIsFull(EventBookingSystemTest.java:62)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+EventBookingSystemTest.findsEventWithoutCaseSensitivity -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "EventBookingSystem.createEvent(String, int)" because "this.system" is null
+	at EventBookingSystemTest.findsEventWithoutCaseSensitivity(EventBookingSystemTest.java:38)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+EventBookingSystemTest.cancelsExistingRegistration -- Time elapsed: 0 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "EventBookingSystem.createEvent(String, int)" because "this.system" is null
+	at EventBookingSystemTest.cancelsExistingRegistration(EventBookingSystemTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

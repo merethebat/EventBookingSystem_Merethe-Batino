@@ -14,7 +14,7 @@ This is a small Java console program for creating events and managing attendee r
 - Reuse a seat after someone cancels
 
 ## Requirements
-- Java 17
+- Java 21
 - Maven
 - JUnit 5 (included as a Maven test dependency)
 
